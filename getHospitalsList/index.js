@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
 
             // TODO : Add 'Address' column in the query
              const query = `
-                 SELECT ID, Name, Latitude, Longitude, SpecialitiesAvailable FROM Hospitals;
+                 SELECT ID, Name, Latitude, Longitude, SpecialitiesAvailable, Address FROM Hospitals;
              `;
             
              const result = await pool.request()
